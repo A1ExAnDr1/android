@@ -24,9 +24,10 @@ fun MainScreen() {
 @Composable
 fun BottomBar(navController: NavHostController) {
     val screens = listOf(
-        BottomBarScreen.Home,
+        BottomBarScreen.Cat,
         BottomBarScreen.Profile,
-        BottomBarScreen.Settings,
+        BottomBarScreen.Favorits,
+        BottomBarScreen.Scanner,
     )
     val navBackStackEntry by navController.currentBackStackEntryAsState()
     val currentDestination = navBackStackEntry?.destination
